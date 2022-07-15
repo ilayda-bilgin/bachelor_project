@@ -101,15 +101,15 @@ class LocalRunner(Runner):
                 return SubTerrain(width=num_rows, length=num_cols, vertical_scale=vertical_scale,
                                   horizontal_scale=horizontal_scale)
 
-            heightfield[0:num_rows, :] = random_uniform_terrain(new_sub_terrain(), min_height=-0.0, max_height=0.1,
+            #heightfield[0:num_rows, :] = random_uniform_terrain(new_sub_terrain(), min_height=-0.0, max_height=0.1,
                                                                 step=0.1, downsampled_scale=0.4).height_field_raw
 
-            # heightfield[0:num_rows, :] = random_uniform_terrain(new_sub_terrain(), min_height=-0.0, max_height=0.3,
+            heightfield[0:num_rows, :] = random_uniform_terrain(new_sub_terrain(), min_height=-0.0, max_height=0.3,
             #                                                      step=0.1, downsampled_scale=0.4).height_field_raw
             # #
             # heightfield[0:num_rows, :] = random_uniform_terrain(new_sub_terrain(), min_height=-0.0, max_height=0.3,
             #                                                     step=0.1, downsampled_scale=0.8).height_field_raw
-            # heightfield[0:num_rows, :] = random_uniform_terrain(new_sub_terrain(), min_height=-0.0, max_height=0.1,
+            # heightfield[0:num_rows, :] = random_uniform_terrain(new_sub_terrain(), min_height=-0.0, max_height=0.3,
             #                                                      step=0.4, downsampled_scale=0.4).height_field_raw
 
 
